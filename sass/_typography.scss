@@ -1,0 +1,112 @@
+section {
+  padding: 8rem 0;
+}
+
+/* ---------------- 
+ Headers 
+---------------- */
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 300;
+  word-spacing: 3px;
+  color: var(--color-white);
+
+  margin-bottom: 2rem;
+
+  @media (max-width: $bp-lg) {
+    font-size: 3.7rem;
+  }
+
+  @media (max-width: $bp-md) {
+    font-size: 3.4rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 3rem;
+
+  @media (max-width: $bp-md) {
+    font-size: 3.1rem;
+  }
+
+  @media (max-width: $bp-sm) {
+    font-size: 2.7rem;
+  }
+}
+
+.heading-secondary::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--color-primary);
+  width: 10rem;
+  margin: 3rem auto 0;
+}
+
+.heading-tertiary {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------------- 
+ Buttons 
+---------------- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-primary-dark);
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  border: 1px solid var(--color-primary-dark);
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  color: var(--color-white);
+  border: 1px solid var(--color-primary-dark);
+}
+
+/* ---------------- 
+ Icon 
+---------------- */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

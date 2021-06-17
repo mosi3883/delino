@@ -1,0 +1,41 @@
+// .section-features {
+
+// }
+
+.features__text {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.9rem;
+  margin-bottom: 4rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.feature {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  // border: 1px solid var(--color-black-alpha-xs);
+  box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.06);
+  border-radius: 5px;
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: var(--color-primary);
+  }
+
+  &__heading {
+    margin-top: 0.5rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    text-align: right;
+  }
+}

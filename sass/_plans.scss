@@ -1,0 +1,77 @@
+.section-plans {
+  background-color: var(--color-gray-1);
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  column-gap: 4rem;
+  row-gap: 4rem;
+}
+
+.plan {
+  // padding: 3rem 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem var(--color-black-alhpa-xs);
+
+  & > div {
+    padding: 1.5rem;
+    border-bottom: 1px solid #efefef;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__price-box {
+    background-color: var(--color-gray-2);
+    flex: 4 1 auto;
+  }
+
+  &__price {
+    color: var(--color-primary-dark);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: $bp-sm) {
+      text-align: center;
+    }
+
+    span {
+      font-size: 4rem;
+      color: var(--color-primary);
+    }
+  }
+
+  &__price-meal {
+    font-size: 1.4rem;
+  }
+
+  &__features {
+    flex: 6 1 auto;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    font-size: 1.9rem;
+    padding: 0.5rem 0;
+  }
+
+  &__icon {
+    color: var(--color-primary);
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  &__signup {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

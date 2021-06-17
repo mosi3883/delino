@@ -1,0 +1,13 @@
+{
+  "name": "killer-flex-grid",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass sass/main.scss css/style.css --watch",
+    "watch:min": "node-sass sass/main.scss css/style.min.css --watch --output-style compressed"
+  },
+  "author": "Mostafa Bodagh Abadi",
+  "license": "ISC"
+}

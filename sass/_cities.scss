@@ -1,0 +1,29 @@
+// .section-cities {
+
+// }
+
+.cities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 5rem;
+}
+
+.city {
+  font-size: 1.9rem;
+  &__img {
+    width: 100%;
+  }
+
+  &-feature {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      color: var(--color-primary);
+      margin-left: 5px;
+      margin-top: -3px;
+    }
+  }
+}

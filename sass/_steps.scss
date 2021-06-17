@@ -1,0 +1,126 @@
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $bp-sm) {
+    flex-direction: column;
+  }
+
+  &__img {
+    flex: 1 0 40%;
+    padding-left: 3rem;
+    text-align: left;
+
+    @media (max-width: $bp-md) {
+      flex: 0 0 40%;
+    }
+    @media (max-width: $bp-sm) {
+      flex: 1 1 auto;
+      text-align: center;
+      padding-left: 0;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__steps {
+    flex: 1 0 60%;
+    padding-right: 3rem;
+    @media (max-width: $bp-md) {
+      flex: 0 0 60%;
+    }
+    @media (max-width: $bp-sm) {
+      flex: 1 1 auto;
+      padding-right: 0;
+      padding-top: 3rem;
+    }
+  }
+
+  &-screen {
+    width: 50%;
+
+    @media (max-width: $bp-lg) {
+      width: 60%;
+    }
+
+    @media (max-width: $bp-md) {
+      width: 70%;
+    }
+
+    // @media (max-width: $bp-sm) {
+    //   width: 55%;
+    // }
+  }
+
+  &__btns {
+    margin-top: 5rem;
+
+    @media (max-width: $bp-sm) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 1rem;
+    }
+
+    & img {
+      height: 6rem;
+      @media (max-width: $bp-md) {
+        height: 4.5rem;
+      }
+
+      @media (max-width: $bp-sm) {
+        height: 7rem;
+      }
+    }
+  }
+}
+
+// .steps {
+//   display: grid;
+//   grid-template-columns: 5rem 1fr;
+//   column-gap: 1rem;
+//   row-gap: 2rem;
+//   &__count {
+//     color: var(--color-primary);
+//     border: 1px solid var(--color-primary);
+//     border-radius: 50%;
+//     width: 5rem;
+//     height: 5rem;
+//   }
+// }
+
+.step {
+  display: flex;
+
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__count {
+    flex: 0 0 5rem;
+    color: var(--color-primary);
+    margin-left: 1.5rem;
+    border: 2px solid var(--color-primary);
+
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+  }
+
+  &__description {
+    font-size: 2rem;
+  }
+}
