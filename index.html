@@ -9,14 +9,19 @@
   <title>رستوران حمتی</title>
 
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
-  <!-- <div class="hamberger">
-    <svg class="icon icon-menu">
+  <a href="#" class="hamberger" role="button" data-state="0">
+    <svg class="icon icon-menu ham__icon">
       <use href="img/sprite.svg#icon-menu"></use>
     </svg>
-  </div> -->
+    <svg class="icon icon-close ham__icon hidden">
+      <use href="img/sprite.svg#icon-close"></use>
+    </svg>
+  </a>
+  <div class="overlay hidden"></div>
   <header class="header">
     <!-- * fix navbar in mobile -->
     <div class="container mt-sm flex jc-sb ai-c">

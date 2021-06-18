@@ -75,6 +75,42 @@ body {
   font-weight: 300;
   line-height: 1.45; }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
+.hamberger {
+  display: none;
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  background-color: rgba(71, 179, 187, 0.87);
+  color: var(--color-white);
+  border-radius: 50%;
+  padding: 1.5rem;
+  z-index: 20;
+  line-height: 0; }
+  @media (max-width: 36em) {
+    .hamberger {
+      display: block; } }
+
+.ham__icon {
+  width: 4rem !important;
+  height: 4rem !important; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.98);
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 15; }
+
 .header {
   min-height: 55rem;
   height: 100vh;
@@ -112,6 +148,9 @@ body {
 .main-nav {
   list-style: none;
   display: flex; }
+  @media (max-width: 36em) {
+    .main-nav {
+      display: none; } }
   .main-nav__item:not(:last-child) {
     margin-left: 4rem; }
   .main-nav__link:link, .main-nav__link:visited {
@@ -217,14 +256,6 @@ section {
 /* ---------------- 
  Icon 
 ---------------- */
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor; }
-
 .section-features {
   background-color: #f9f9f9; }
 
@@ -525,16 +556,31 @@ blockquote {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 48em) {
+      .footer__navs {
+        flex-direction: column; } }
   .footer__nav-list {
     list-style: none;
     display: flex; }
+    @media (max-width: 48em) {
+      .footer__nav-list {
+        margin-bottom: 1.5rem; } }
+    @media (max-width: 36em) {
+      .footer__nav-list {
+        flex-direction: column; } }
+  .footer__nav-item {
+    flex-grow: 1; }
   .footer__nav-link:link, .footer__nav-link:visited {
     color: #888;
-    display: inline-block;
+    display: block;
     padding: 1rem 1.5rem;
     text-decoration: none;
     font-size: 1.6rem;
-    transition: all 0.25s; }
+    transition: all 0.25s;
+    text-align: center; }
+    @media (max-width: 36em) {
+      .footer__nav-link:link, .footer__nav-link:visited {
+        padding: 4px 2rem; } }
   .footer__nav-link:hover, .footer__nav-link:active {
     color: #ddd; }
 
@@ -615,3 +661,6 @@ blockquote {
 
 .ai-c {
   align-items: center; }
+
+.hidden {
+  display: none; }
