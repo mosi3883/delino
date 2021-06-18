@@ -1,5 +1,13 @@
 section {
   padding: 8rem 0;
+
+  @media (max-width: $bp-md) {
+    padding: 6rem 0;
+  }
+
+  @media (max-width: $bp-sm) {
+    padding: 4rem 0;
+  }
 }
 
 /* ---------------- 

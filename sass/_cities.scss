@@ -10,7 +10,18 @@
 }
 
 .city {
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem var(--color-black-alpha-xs);
   font-size: 1.9rem;
+  padding-bottom: 2rem;
+
+  &__heading,
+  &__features {
+    padding: 0 1rem;
+  }
+
+
+
   &__img {
     width: 100%;
   }
@@ -19,6 +30,7 @@
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    font-size: 1.7rem;
 
     .icon {
       color: var(--color-primary);

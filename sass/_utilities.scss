@@ -2,6 +2,14 @@
   max-width: 114rem;
   margin: 0 auto;
   width: 92%;
+
+  @media (max-width: $bp-md) {
+    width: 89%;
+  }
+
+  @media (max-width: $bp-sm) {
+    width: 86%;
+  }
 }
 
 .mt-sm {

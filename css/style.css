@@ -128,6 +128,12 @@ body {
 
 section {
   padding: 8rem 0; }
+  @media (max-width: 48em) {
+    section {
+      padding: 6rem 0; } }
+  @media (max-width: 36em) {
+    section {
+      padding: 4rem 0; } }
 
 /* ---------------- 
  Headers 
@@ -219,6 +225,9 @@ section {
   stroke: currentColor;
   fill: currentColor; }
 
+.section-features {
+  background-color: #f9f9f9; }
+
 .features__text {
   text-align: center;
   width: 75%;
@@ -233,6 +242,7 @@ section {
   row-gap: 3rem; }
 
 .feature {
+  background-color: #fff;
   padding: 3rem 1.5rem;
   text-align: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06);
@@ -356,13 +366,19 @@ section {
   row-gap: 5rem; }
 
 .city {
-  font-size: 1.9rem; }
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem var(--color-black-alpha-xs);
+  font-size: 1.9rem;
+  padding-bottom: 2rem; }
+  .city__heading, .city__features {
+    padding: 0 1rem; }
   .city__img {
     width: 100%; }
   .city-feature {
     margin-bottom: 1rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    font-size: 1.7rem; }
     .city-feature .icon {
       color: var(--color-primary);
       margin-left: 5px;
@@ -463,10 +479,130 @@ blockquote {
     text-align: center;
     font-size: 2rem; }
 
+.form {
+  width: 60%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  justify-content: center; }
+  @media (max-width: 62em) {
+    .form {
+      width: 82%;
+      grid-template-columns: 17rem 1fr; } }
+  @media (max-width: 48em) {
+    .form {
+      width: 90%;
+      grid-template-columns: 16rem 1fr; } }
+  @media (max-width: 36em) {
+    .form {
+      width: 98%;
+      grid-template-columns: 1fr; } }
+  .form__input, .form__select {
+    display: block;
+    padding: 5px 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    width: 100%; }
+    .form__input:focus, .form__select:focus {
+      outline: none; }
+  .form__textarea {
+    height: 10rem;
+    padding: 1rem;
+    border: 1px solid #ccc; }
+    .form__textarea:focus {
+      outline: none; }
+  .form label {
+    font-size: 1.6rem; }
+
+.footer {
+  background-color: #333;
+  color: #888;
+  padding: 4rem 0; }
+  .footer__navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__nav-list {
+    list-style: none;
+    display: flex; }
+  .footer__nav-link:link, .footer__nav-link:visited {
+    color: #888;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all 0.25s; }
+  .footer__nav-link:hover, .footer__nav-link:active {
+    color: #ddd; }
+
+.social__list {
+  list-style: none;
+  display: flex; }
+  .social__list svg {
+    height: 2rem;
+    width: 2rem; }
+
+.social__link:link,
+.social__link:visited {
+  color: #888;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition: all 0.25s; }
+
+.social__link:hover .icon-facebook2,
+.social__link:active .icon-facebook2 {
+  fill: #3b5998; }
+
+.social__link:hover .icon-twitter,
+.social__link:active .icon-twitter {
+  fill: #00aced; }
+
+.social__link:hover .icon-google-plus2,
+.social__link:active .icon-google-plus2 {
+  fill: #dd4b39; }
+
+.social__link:hover .icon-instagram,
+.social__link:active .icon-instagram {
+  fill: #517fa4; }
+
+.copy-text {
+  width: 80%;
+  margin: 3rem auto 0;
+  text-align: center;
+  font-size: 1.6rem; }
+
+.copy-text a:link,
+.copy-text a:visited {
+  color: #eee;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px; }
+
+.copy-text a:hover,
+.copy-text a:active {
+  border-bottom: 1px solid deepskyblue; }
+
+.copy-text .icon-heart {
+  height: 1.2rem;
+  width: 1.2rem;
+  color: red;
+  vertical-align: middle; }
+
 .container {
   max-width: 114rem;
   margin: 0 auto;
   width: 92%; }
+  @media (max-width: 48em) {
+    .container {
+      width: 89%; } }
+  @media (max-width: 36em) {
+    .container {
+      width: 86%; } }
 
 .mt-sm {
   margin-top: 2rem; }

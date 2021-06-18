@@ -1,0 +1,53 @@
+.form {
+  width: 60%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+
+  column-gap: 3rem;
+  row-gap: 2rem;
+  justify-content: center;
+
+  @media (max-width: $bp-lg) {
+    width: 82%;
+    grid-template-columns: 17rem 1fr;
+  }
+
+  @media (max-width: $bp-md) {
+    width: 90%;
+    grid-template-columns: 16rem 1fr;
+  }
+
+  @media (max-width: $bp-sm) {
+    width: 98%;
+    grid-template-columns: 1fr;
+  }
+
+  &__input,
+  &__select {
+    display: block;
+    padding: 5px 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    height: 10rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label {
+    font-size: 1.6rem;
+  }
+}

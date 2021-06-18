@@ -12,7 +12,13 @@
 </head>
 
 <body>
+  <!-- <div class="hamberger">
+    <svg class="icon icon-menu">
+      <use href="img/sprite.svg#icon-menu"></use>
+    </svg>
+  </div> -->
   <header class="header">
+    <!-- * fix navbar in mobile -->
     <div class="container mt-sm flex jc-sb ai-c">
       <img src="img/logo-white.png" alt="رستوران حمتی" class="header__logo" />
       <ul class="main-nav">
@@ -337,10 +343,18 @@
           <div class="plan__features">
             <ul class="plan__list">
               <li class="plan__item">
-                <svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg> هر روز 1 وعده غذايي</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg> سفارش 24/7</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg>  دسترسي به جديدترين آثار</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg>  تحويل رايگان</li>
+                <svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> هر روز 1 وعده غذايي</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> سفارش 24/7</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> دسترسي به جديدترين آثار</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> تحويل رايگان</li>
             </ul>
           </div>
           <div class="plan__signup">
@@ -356,10 +370,18 @@
           <div class="plan__features">
             <ul class="plan__list">
               <li class="plan__item">
-                <svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg> 10 وعده غذايي در ماه</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg> سفارش 24/7</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg>  دسترسي به جديدترين آثار</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg>  تحويل رايگان</li>
+                <svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> 10 وعده غذايي در ماه</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> سفارش 24/7</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> دسترسي به جديدترين آثار</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> تحويل رايگان</li>
             </ul>
           </div>
           <div class="plan__signup">
@@ -375,10 +397,16 @@
           <div class="plan__features">
             <ul class="plan__list">
               <li class="plan__item">
-                <svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg> 1 وعده غذايي</li>
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg>سفارش از 8 صبح تا 12 شب</li>
-              
-              <li class="plan__item"><svg class="icon icon-check plan__icon"><use href="img/sprite.svg#icon-check"></use></svg>  تحويل رايگان</li>
+                <svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> 1 وعده غذايي</li>
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg>سفارش از 8 صبح تا 12 شب</li>
+
+              <li class="plan__item"><svg class="icon icon-check plan__icon">
+                  <use href="img/sprite.svg#icon-check"></use>
+                </svg> تحويل رايگان</li>
             </ul>
           </div>
           <div class="plan__signup">
@@ -389,9 +417,81 @@
     </div>
   </section>
 
-  <!-- <svg class="icon icon-close plan__icon"><use href="img/sprite.svg#icon-close"></use></svg> -->
 
 
+  <!--+ add comment section-->
+
+
+  <section class="section-commnets">
+    <div class="container">
+      <h2 class="heading-secondary">منتظر نظرات شما هستیم</h2>
+    </div>
+    <div class="container">
+      <!-- * redign this with .form-group and flexbox instead of grid -->
+      <form action="#" class="form">
+        <label for="name">نام</label>
+        <input type="text" class="form__input" id="name" placeholder="نام شما">
+        <label for="email">ایمیل</label>
+        <input type="email" name="email" id="email" class="form__input" placeholder="ایمیل شما">
+        <label for="find-us">چگونه با ما آشنا شدید؟</label>
+        <select name="find-us" id="find-us" class="form__select">
+          <option value="friends">دوستان</option>
+          <option value="search" selected>موتورهای جستجو</option>
+          <option value="ads">تبلیغات</option>
+          <option value="others">سایر</option>
+        </select>
+        <label for="comment">نظر شما</label>
+        <textarea name="comment" id="comment" class="form__textarea"></textarea>
+
+      </form>
+    </div>
+  </section>
+  <!-- + add footer-->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__navs">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">درباره ما</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">بلاگ</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">اخبار</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">نرم افزار IOS</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">نرم افزار اندروید</a></li>
+          </ul>
+        </nav>
+        <nav class="social__nav">
+          <ul class="social__list">
+            <li class="socail__item"><a href="#" class="social__link">
+                <svg class="icon icon-facebook2">
+                  <use href="img/sprite.svg#icon-facebook2"></use>
+                </svg>
+              </a></li>
+            <li class="socail__item"><a href="#" class="social__link"><svg class="icon icon-twitter">
+                  <use href="img/sprite.svg#icon-twitter"></use>
+                </svg></a></li>
+            <li class="socail__item"><a href="#" class="social__link"><svg class="icon icon-google-plus2">
+                  <use href="img/sprite.svg#icon-google-plus2"></use>
+                </svg></a></li>
+            <li class="socail__item"><a href="#" class="social__link"><svg class="icon icon-instagram">
+                  <use href="img/sprite.svg#icon-instagram"></use>
+                </svg></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copy-text">
+        ساخته شده با عشق
+        <svg class="icon icon-heart">
+          <use href="img/sprite.svg#icon-heart"></use>
+        </svg>
+        توسط مصطفی بداغ آبادی بر اساس طرحی از
+        <a href="https://codingheroes.io/" target="_blank" rel="noopener noreferrer">jonas schmedtmann</a>
+      </p>
+    </div>
+  </footer>
+  <!---->
 </body>
 
 </html>
