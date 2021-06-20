@@ -111,7 +111,7 @@ body {
   position: fixed;
   z-index: 15;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.7s;
   display: grid;
   place-items: center; }
   .overlay__list {
@@ -185,7 +185,8 @@ body {
     border-bottom: 2px solid var(--color-primary); }
 
 section {
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  transition: all 1s; }
   @media (max-width: 48em) {
     section {
       padding: 6rem 0; } }
@@ -308,7 +309,7 @@ section {
     text-align: right; }
 
 .section-gallery {
-  padding: 4rem 0 0;
+  padding: 0 0 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 48em) {
@@ -479,6 +480,11 @@ section {
 blockquote {
   font-style: italic; }
 
+@keyframes pulse {
+  50% {
+    transform: scale(1.02);
+    backface-visibility: hidden; } }
+
 .section-plans {
   background-color: var(--color-gray-1); }
 
@@ -494,6 +500,12 @@ blockquote {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0.5rem 1rem var(--color-black-alhpa-xs); }
+  .plan:first-child {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-play-state: paused; }
   .plan > div {
     padding: 1.5rem;
     border-bottom: 1px solid #efefef; }
@@ -683,3 +695,10 @@ blockquote {
 
 .hidden {
   display: none; }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
+
+.play {
+  animation-play-state: running !important; }

@@ -1,3 +1,10 @@
+@keyframes pulse {
+  50% {
+    transform: scale(1.02);
+    backface-visibility: hidden;
+  }
+}
+
 .section-plans {
   background-color: var(--color-gray-1);
 }
@@ -10,6 +17,16 @@
 }
 
 .plan {
+
+  &:first-child {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-play-state: paused;
+
+  }
+
   // padding: 3rem 1rem;
   background-color: #fff;
   border-radius: 5px;
@@ -18,7 +35,7 @@
   flex-direction: column;
   box-shadow: 0 0.5rem 1rem var(--color-black-alhpa-xs);
 
-  & > div {
+  &>div {
     padding: 1.5rem;
     border-bottom: 1px solid #efefef;
 
