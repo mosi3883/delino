@@ -1,3 +1,4 @@
+@use "vars" as *;
 .footer {
   background-color: #333;
   color: #888;
@@ -27,7 +28,6 @@
 
     @media (max-width: $bp-sm) {
       flex-direction: column;
-
     }
   }
 
@@ -63,6 +63,7 @@
   svg {
     height: 2rem;
     width: 2rem;
+    transition: all 0.7s;
   }
 }
 
@@ -72,7 +73,7 @@
   display: inline-block;
   padding: 1rem 1.5rem;
   text-decoration: none;
-  transition: all 0.25s;
+  // transition: all 0.25s;
 }
 
 .social__link:hover,

@@ -1,3 +1,4 @@
+@use "vars" as *;
 .container {
   max-width: 114rem;
   margin: 0 auto;
@@ -29,7 +30,6 @@
 }
 
 .hidden {
-
   display: none;
 }
 
