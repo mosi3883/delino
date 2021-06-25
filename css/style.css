@@ -699,6 +699,7 @@ blockquote {
   font-size: inherit;
   border: 1px solid #ccc;
   width: 100%;
+  color: inherit;
   margin-right: 4rem;
 }
 .form__input:focus, .form__select:focus {
@@ -712,6 +713,7 @@ blockquote {
   margin-right: 4rem;
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
 }
 .form__textarea:focus {
   outline: none;
