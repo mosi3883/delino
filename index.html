@@ -441,7 +441,7 @@
 
 
 
-  <!--+ add comment section-->
+ 
 
 
   <section class="section-commnets" id="section--7">
@@ -449,23 +449,37 @@
       <h2 class="heading-secondary">منتظر نظرات شما هستیم</h2>
     </div>
     <div class="container">
-      <!-- * redign this with .form-group and flexbox instead of grid -->
-      <form action="#" class="form">
-        <label for="name">نام</label>
-        <input type="text" class="form__input" id="name" placeholder="نام شما">
-        <label for="email">ایمیل</label>
-        <input type="email" name="email" id="email" class="form__input" placeholder="ایمیل شما">
-        <label for="find-us">چگونه با ما آشنا شدید؟</label>
-        <select name="find-us" id="find-us" class="form__select">
-          <option value="friends">دوستان</option>
-          <option value="search" selected>موتورهای جستجو</option>
-          <option value="ads">تبلیغات</option>
-          <option value="others">سایر</option>
-        </select>
-        <label for="comment">نظر شما</label>
-        <textarea name="comment" id="comment" class="form__textarea"></textarea>
+     
+      <form class="form">
+        <div class="form-group">
+          <label for="name">نام</label>
+          <input type="text" class="form__input" id="name" placeholder="نام شما">
+        </div>
+        <div class="form-group">
+          <label for="email">ایمیل</label>
+          <input type="email" name="email" id="email" class="form__input" placeholder="ایمیل شما">
+        </div>
 
+        <div class="form-group">
+          <label for="find-us">چگونه با ما آشنا شدید؟</label>
+          <select name="find-us" id="find-us" class="form__select">
+            <option value="friends">دوستان</option>
+            <option value="search" selected>موتورهای جستجو</option>
+            <option value="ads">تبلیغات</option>
+            <option value="others">سایر</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">نظر شما</label>
+          <textarea name="comment" id="comment" class="form__textarea"></textarea>
+        </div>
+
+        <div class="form-group mt-lg">
+          <a href="#" class="btn btn--secondary">ارسال</a>
+        </div>
       </form>
+     
     </div>
   </section>
   <!-- + add footer-->
