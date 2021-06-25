@@ -70,6 +70,10 @@
 
     &:first-child {
       margin-left: 1rem;
+
+      @media (max-width: 430px) {
+        margin-left: 0;
+      }
     }
 
     & img {
@@ -80,6 +84,11 @@
 
       @media (max-width: $bp-sm) {
         height: 7rem;
+      }
+
+      @media (max-width: 430px) {
+        height: auto;
+        width: 100%;
       }
     }
   }

@@ -475,6 +475,11 @@ section {
 .app__btn:first-child {
   margin-left: 1rem;
 }
+@media (max-width: 430px) {
+  .app__btn:first-child {
+    margin-left: 0;
+  }
+}
 .app__btn img {
   height: 6rem;
 }
@@ -486,6 +491,12 @@ section {
 @media (max-width: 36em) {
   .app__btn img {
     height: 7rem;
+  }
+}
+@media (max-width: 430px) {
+  .app__btn img {
+    height: auto;
+    width: 100%;
   }
 }
 
