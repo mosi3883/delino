@@ -449,7 +449,7 @@ section {
 }
 .app-screen {
   width: 50%;
-  max-height: 80vh;
+  max-height: 100vh;
 }
 @media (max-width: 62em) {
   .app-screen {
