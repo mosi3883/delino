@@ -374,7 +374,6 @@ section {
 }
 
 .section-gallery {
-  padding: 0 0 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -450,6 +449,7 @@ section {
 }
 .app-screen {
   width: 50%;
+  max-height: 80vh;
 }
 @media (max-width: 62em) {
   .app-screen {

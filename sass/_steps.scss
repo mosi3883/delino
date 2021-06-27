@@ -43,6 +43,7 @@
 
   &-screen {
     width: 50%;
+    max-height: 80vh;
 
     @media (max-width: $bp-lg) {
       width: 60%;
