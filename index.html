@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mostafa Bodagh Abadi" />
-    <title>رستوران حمتی</title>
+    <title>سفارش انلاین غذا - دلینو</title>
 
     <link rel="stylesheet" href="css/style.css?v=1.2" />
     <script src="js/script.js" defer></script>
   </head>
 
   <body>
-    <a href="#" class="hamberger" role="button" data-state="0">
+    <!-- <a href="#" class="hamberger" role="button" data-state="0">
       <svg class="icon icon-menu ham__icon">
         <use href="img/sprite.svg#icon-menu"></use>
       </svg>
@@ -35,14 +35,16 @@
           <a href="#section--6" class="overlay__link">ثبت‌نام کنید</a>
         </li>
       </ul>
-    </div>
+    </div> -->
     <header class="header">
-      <!-- * fix navbar in mobile -->
       <div class="container mt-sm flex jc-sb ai-c">
-        <img src="img/logo-white.png" alt="رستوران حمتی" class="header__logo" />
+        <img src="img/logo-white.png" alt="سفارش انلاین غذا - دلینو" class="header__logo" />
         <ul class="main-nav">
           <li class="main-nav__item">
             <a href="#section--1" class="main-nav__link">تحویل غذا</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#section--2" class="main-nav__link">گالری تصاویر</a>
           </li>
           <li class="main-nav__item">
             <a href="#section--3" class="main-nav__link">نحوه عملکرد</a>
@@ -58,9 +60,9 @@
 
       <div class="hero-text-box">
         <h1 class="heading-primary">
-          خداحافظ غذای بی ارزش
+          غذای های بی کیفیت را فراموش کنید
           <br />
-          سلام بر وعده های غذایی فوق العاده سالم.
+          سلامتی بهتر با غذای های مقوی
         </h1>
 
         <div class="header__btns flex">
@@ -74,9 +76,8 @@
       <div class="container">
         <h2 class="heading-secondary">سریع غذا دریافت کنید — نه فست فود</h2>
         <p class="features__text">
-          سلام ، ما Omnifood هستیم، سرویس جدید تحویل غذای برتر شما. ما می دانیم
-          که شما همیشه مشغول هستید. وقت پخت و پز نیست. پس بگذارید از آن مراقبت
-          کنیم، ما واقعاً در این کار مهارت داریم ، قول می دهیم!
+          ما دلینو هستیم، آشپز مخصوص شما! اگر شما هم وقت کافی برای آشپزی ندارین یا دنبال غذای با کیفیت میگردین، اینجا
+          برای شما ساخته شده، ما مراقب سلامت شما هستیم.
         </p>
       </div>
 
@@ -86,13 +87,10 @@
             <svg class="icon icon-infinite feature__icon">
               <use href="img/sprite.svg#icon-infinite"></use>
             </svg>
-            <h3 class="heading-tertiary feature__heading">
-              حداکثر 365 روز در سال
-            </h3>
+            <h3 class="heading-tertiary feature__heading">در تمامی 365 روز سال</h3>
             <p class="feature__description">
-              ديگر هرگز آشپزي نکنيد! منظور ما واقعاً اين است. برنامه هاي اشتراک
-              ما شامل حداکثر 365 روز / سال پوشش مي باشد. همچنين اگر سبک شماست ،
-              مي توانيد انعطاف پذيري سفارش را انتخاب کنيد.
+              دیگر نیازی به آشپزی نیست، تیم دلینو در تمامی ایام سال از جمله تمامی تعطیلات رسمی و جمعه ها مشغول کار هستن،
+              تا شما هرگز نیازی به آشپزی نداشته باشید.
             </p>
           </div>
           <div class="feature">
@@ -100,37 +98,31 @@
               <use href="img/sprite.svg#icon-clock2"></use>
             </svg>
 
-            <h3 class="heading-tertiary feature__heading">
-              در 20 دقيقه آماده مي شود
-            </h3>
+            <h3 class="heading-tertiary feature__heading">پخت در 20 دقیقه</h3>
             <p class="feature__description">
-              شما فقط بيست دقيقه با وعده هاي غذايي خوشمزه و فوق العاده سالم که
-              مستقيم به خانه تحويل داده شده ايد فاصله داريد. ما با بهترين
-              سرآشپزهاي هر شهر کار مي کنيم تا اطمينان حاصل شود که شما 100٪
-              خوشحال هستيد.
+              شما فقط بيست دقيقه با وعده هاي غذايي خوشمزه و فوق العاده سالم که مستقيم به خانه تحويل داده شده ايد فاصله
+              داريد. ما با بهترين سرآشپزهاي هر شهر کار مي کنيم تا اطمينان حاصل کنیم که شما کاملا راضی هستيد.
             </p>
           </div>
           <div class="feature">
             <svg class="icon icon-leaf feature__icon">
               <use href="img/sprite.svg#icon-leaf"></use>
             </svg>
-            <h3 class="heading-tertiary feature__heading">100٪ ارگانيک</h3>
+            <h3 class="heading-tertiary feature__heading">کاملا ارگانيک</h3>
             <p class="feature__description">
-              همه سبزيجات ما تازه ، ارگانيک و محلي هستند. حيوانات بدون هورمون يا
-              آنتي بيوتيک اضافه مي شوند. براي سلامتي ، محيط زيست و طعم بهتر نيز
-              مفيد است!
+              همه سبزيجات ما تازه ، ارگانيک و محلي هستند. حيوانات بدون هورمون يا آنتي بيوتيک اضافه مي شوند. استفاده از
+              محصولات ارگانیک علاوه بر کمک به محیط زیست باعث طعم بهتر و واقعی تر شدن مزه غذاها نیز میشود
             </p>
           </div>
           <div class="feature">
             <svg class="icon icon-cart feature__icon">
               <use href="img/sprite.svg#icon-cart"></use>
             </svg>
-            <h3 class="heading-tertiary feature__heading">سفارش هر چيزي</h3>
+            <h3 class="heading-tertiary feature__heading">سفارش هر چیزی</h3>
             <p class="feature__description">
-              ما خلاقیت شما را محدود نمی کنیم ، به این معنی که شما می توانید هر
-              آنچه را که دوست دارید سفارش دهید. همچنین می توانید از فهرست غذاهای
-              ما که بیش از 100 وعده غذایی خوشمزه دارد ، انتخاب کنید. این به خود
-              شما بستگی دارد! مي توانيد انعطاف پذيري سفارش را انتخاب کنيد.
+              ما خلاقیت شما را محدود نمی کنیم ، به این معنی که شما می توانید هر آنچه را که دوست دارید سفارش دهید. همچنین
+              می توانید از فهرست غذاهای ما که بیش از 100 وعده غذایی خوشمزه دارد ، انتخاب کنید. این به خود شما بستگی
+              دارد! مي توانيد انعطاف پذيري سفارش را انتخاب کنيد.
             </p>
           </div>
         </div>
@@ -172,44 +164,29 @@
       <div class="container">
         <div class="app">
           <div class="app__img">
-            <img
-              src="img/app-iPhone-min.png"
-              class="app-screen"
-              alt="App screen"
-            />
+            <img src="img/app-iPhone-min.png" class="app-screen" alt="App screen" />
           </div>
           <div class="app__steps">
             <div class="steps">
               <div class="step">
                 <div class="step__count">1</div>
-                <p class="step__description">
-                  طرح اشتراک متناسب با نیازهای خود را انتخاب کنید و امروز ثبت
-                  نام کنید.
-                </p>
+                <p class="step__description">طرح اشتراک متناسب با نیازهای خود را انتخاب کنید و امروز ثبت نام کنید.</p>
               </div>
               <div class="step">
                 <div class="step__count">2</div>
                 <p class="step__description">
-                  غذای خود را با استفاده از برنامه موبایل یا وب سایت ما سفارش
-                  دهید. یا حتی می توانید با ما تماس بگیرید!
+                  غذای خود را با استفاده از برنامه موبایل یا وب سایت ما سفارش دهید. یا حتی می توانید با ما تماس بگیرید!
                 </p>
               </div>
               <div class="step">
                 <div class="step__count">3</div>
-                <p class="step__description">
-                  کمتر از 20 دقیقه از وعده غذایی خود لذت ببرید. دفعه بعد
-                  میبینمت!
-                </p>
+                <p class="step__description">کمتر از 20 دقیقه از وعده غذایی خود لذت ببرید. دفعه بعد میبینمت!</p>
               </div>
             </div>
             <div class="app__btns">
-              <a href="#" class="app__btn">
-                <img src="img/download-app.svg" alt="for iphone" /> </a
+              <a href="#" class="app__btn"> <img src="img/download-app.svg" alt="for iphone" /> </a
               ><a href="#" class="app__btn">
-                <img
-                  src="img/download-app-android.png"
-                  alt="on Google Play Store"
-                />
+                <img src="img/download-app-android.png" alt="on Google Play Store" />
               </a>
             </div>
           </div>
@@ -250,11 +227,7 @@
             </div>
           </div>
           <div class="city">
-            <img
-              src="img/san-francisco-min.jpg"
-              alt="San francisco"
-              class="city__img"
-            />
+            <img src="img/san-francisco-min.jpg" alt="San francisco" class="city__img" />
             <h3 class="heading-tertiary city__heading">سانفرانسيسکو</h3>
             <div class="city__features">
               <div class="city-feature">
@@ -334,62 +307,44 @@
 
     <section class="section-testimonials" id="section--5">
       <div class="container">
-        <h2 class="heading-secondary">
-          مشتريان ما نمي توانند بدون ما زندگي کنند
-        </h2>
+        <h2 class="heading-secondary">مشتريان ما نمي توانند بدون ما زندگي کنند</h2>
       </div>
       <div class="container">
         <div class="testimonials">
           <div class="testimonial">
             <div class="testimonial__text">
               <blockquote>
-                این تجربه بسيار عالي است! من تازه استارتاپي را راه اندازي کردم
-                که هيچ وقت براي پخت و پز براي من باقي نمي گذارد ، بنابراين
-                Omnifood يک نجات دهنده زندگي است. حالا که عادت کردم بدون وعده
-                هاي غذايي روزانه نمي توانستم زندگي کنم!
+                این تجربه بسيار عالي است! من تازه استارتاپي را راه اندازي کردم که هيچ وقت براي پخت و پز براي من باقي نمي
+                گذارد ، بنابراين Omnifood يک نجات دهنده زندگي است. حالا که عادت کردم بدون وعده هاي غذايي روزانه نمي
+                توانستم زندگي کنم!
               </blockquote>
             </div>
             <div class="testimonial__author">
-              <img
-                src="img/customer-1-min.jpg"
-                alt="customer-1"
-                class="testimonial__author-img"
-              />
+              <img src="img/customer-1-min.jpg" alt="customer-1" class="testimonial__author-img" />
               <p class="testimonial__author-name">آلبرتو دانکن</p>
             </div>
           </div>
           <div class="testimonial">
             <div class="testimonial__text">
               <blockquote>
-                وعده هاي غذايي ارزان ، سالم و با مزه بسيار عالي ، به خانه من
-                تحويل داده مي شود. ما در ليسبون تحويل غذايي زيادي داريم ، اما
-                هيچ کس حتي به اوميفود نزديک نمي شود. من و خانواده ام خيلي عاشق
-                هم هستيم!
+                وعده هاي غذايي ارزان ، سالم و با مزه بسيار عالي ، به خانه من تحويل داده مي شود. ما در ليسبون تحويل غذايي
+                زيادي داريم ، اما هيچ کس حتي به اوميفود نزديک نمي شود. من و خانواده ام خيلي عاشق هم هستيم!
               </blockquote>
             </div>
             <div class="testimonial__author">
-              <img
-                src="img/customer-2-min.jpg"
-                alt="customer-2"
-                class="testimonial__author-img"
-              />
+              <img src="img/customer-2-min.jpg" alt="customer-2" class="testimonial__author-img" />
               <p class="testimonial__author-name">جوآنا سيلوا</p>
             </div>
           </div>
           <div class="testimonial">
             <div class="testimonial__text">
               <blockquote>
-                من به دنبال يک سرويس تحويل سريع و آسان غذا در سانفرانسيسو بودم.
-                من بسياري از آنها را امتحان کردم و در نهايت به Omnifood رسيدم.
-                بهترين خدمات تحويل غذا در منطقه خليج. ادامه کار بزرگ!
+                من به دنبال يک سرويس تحويل سريع و آسان غذا در سانفرانسيسو بودم. من بسياري از آنها را امتحان کردم و در
+                نهايت به Omnifood رسيدم. بهترين خدمات تحويل غذا در منطقه خليج. ادامه کار بزرگ!
               </blockquote>
             </div>
             <div class="testimonial__author">
-              <img
-                src="img/customer-3-min.jpg"
-                alt="customer-3"
-                class="testimonial__author-img"
-              />
+              <img src="img/customer-3-min.jpg" alt="customer-3" class="testimonial__author-img" />
               <p class="testimonial__author-name">ميلتون چپمن</p>
             </div>
           </div>
@@ -407,9 +362,7 @@
             <div class="plan__price-box">
               <h3 class="heading-tertiary plan__name">حق بیمه</h3>
               <p class="plan__price"><span>1,000,000</span> در ماه</p>
-              <p class="plan__price-meal">
-                اين فقط 30,000 تومان براي هر وعده غذايي است
-              </p>
+              <p class="plan__price-meal">اين فقط 30,000 تومان براي هر وعده غذايي است</p>
             </div>
             <div class="plan__features">
               <ul class="plan__list">
@@ -447,9 +400,7 @@
             <div class="plan__price-box">
               <h3 class="heading-tertiary plan__name">طرفدار</h3>
               <p class="plan__price"><span>400,000</span> در ماه</p>
-              <p class="plan__price-meal">
-                اين فقط 40,000 تومان براي هر وعده غذايي است
-              </p>
+              <p class="plan__price-meal">اين فقط 40,000 تومان براي هر وعده غذايي است</p>
             </div>
             <div class="plan__features">
               <ul class="plan__list">
@@ -527,22 +478,11 @@
         <form class="form">
           <div class="form-group">
             <label for="name">نام</label>
-            <input
-              type="text"
-              class="form__input"
-              id="name"
-              placeholder="نام شما"
-            />
+            <input type="text" class="form__input" id="name" placeholder="نام شما" />
           </div>
           <div class="form-group">
             <label for="email">ایمیل</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form__input"
-              placeholder="ایمیل شما"
-            />
+            <input type="email" name="email" id="email" class="form__input" placeholder="ایمیل شما" />
           </div>
 
           <div class="form-group">
@@ -557,11 +497,7 @@
 
           <div class="form-group">
             <label for="comment">نظر شما</label>
-            <textarea
-              name="comment"
-              id="comment"
-              class="form__textarea"
-            ></textarea>
+            <textarea name="comment" id="comment" class="form__textarea"></textarea>
           </div>
 
           <div class="form-group mt-lg ai-c">
@@ -632,12 +568,7 @@
             <use href="img/sprite.svg#icon-heart"></use>
           </svg>
           توسط مصطفی بداغ آبادی بر اساس طرحی از
-          <a
-            href="https://codingheroes.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >jonas schmedtmann</a
-          >
+          <a href="https://codingheroes.io/" target="_blank" rel="noopener noreferrer">jonas schmedtmann</a>
         </p>
       </div>
     </footer>

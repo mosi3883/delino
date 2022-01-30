@@ -1,8 +1,12 @@
-@use "vars" as *;
+@use 'vars' as *;
 .container {
   max-width: 114rem;
   margin: 0 auto;
   width: 92%;
+
+  @media screen and (min-width: $bp-xl) {
+    max-width: 112rem;
+  }
 
   @media (max-width: $bp-md) {
     width: 89%;

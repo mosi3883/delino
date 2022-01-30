@@ -1,4 +1,4 @@
-@use "vars" as *;
+@use 'vars' as *;
 section {
   padding: 8rem 0;
   transition: all 1s;
@@ -22,7 +22,7 @@ section {
   word-spacing: 3px;
   color: var(--color-white);
 
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 
   @media (max-width: $bp-lg) {
     font-size: 3.7rem;
@@ -49,7 +49,7 @@ section {
 }
 
 .heading-secondary::after {
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   background-color: var(--color-primary);
@@ -58,8 +58,8 @@ section {
 }
 
 .heading-tertiary {
-  font-size: 2.2rem;
-  font-weight: 300;
+  font-size: 2.1rem;
+  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 

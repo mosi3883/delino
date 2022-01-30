@@ -1,4 +1,4 @@
-@use "vars" as *;
+@use 'vars' as *;
 .hamberger {
   display: none;
   position: fixed;
@@ -61,8 +61,7 @@
 .header {
   min-height: 55rem;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -96,7 +95,9 @@
 }
 
 .header__logo {
-  height: 10.5rem;
+  height: 10rem;
+  filter: opacity(0.8);
+  transition: filter 0.25s;
 
   @media (max-width: $bp-lg) {
     height: 9rem;
@@ -104,6 +105,10 @@
 
   @media (max-width: $bp-md) {
     height: 8rem;
+  }
+
+  &:hover {
+    filter: opacity(1);
   }
 }
 
@@ -134,5 +139,6 @@
   &__link:active {
     color: var(--color-white);
     border-bottom: 2px solid var(--color-primary);
+    transform: translateY(-2px);
   }
 }
