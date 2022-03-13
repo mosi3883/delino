@@ -1,4 +1,4 @@
-@use "vars" as *;
+@use 'vars' as *;
 @keyframes pulse {
   50% {
     transform: scale(1.02);

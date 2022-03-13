@@ -61,7 +61,8 @@
 .header {
   min-height: 55rem;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -69,6 +70,24 @@
   position: relative;
 
   overflow: hidden;
+
+  &__logo {
+    height: 10rem;
+    filter: opacity(0.8);
+    transition: filter 0.25s;
+
+    @media (max-width: $bp-lg) {
+      height: 9rem;
+    }
+
+    @media (max-width: $bp-md) {
+      height: 8rem;
+    }
+
+    &:hover {
+      filter: opacity(1);
+    }
+  }
 
   &__btns {
     font-size: 2rem;
@@ -92,24 +111,6 @@
   // min-height: 100px;
   // background-color: #fff;
   transform: translate(50%, -50%);
-}
-
-.header__logo {
-  height: 10rem;
-  filter: opacity(0.8);
-  transition: filter 0.25s;
-
-  @media (max-width: $bp-lg) {
-    height: 9rem;
-  }
-
-  @media (max-width: $bp-md) {
-    height: 8rem;
-  }
-
-  &:hover {
-    filter: opacity(1);
-  }
 }
 
 .main-nav {

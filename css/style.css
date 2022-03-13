@@ -43,7 +43,7 @@ html {
 }
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 75%;
+    font-size: 70%;
   }
 }
 @media (max-width: 48em) {
@@ -60,7 +60,6 @@ html {
 body {
   font-family: "Vazir", "tahoma", "Arial", sans-serif;
   color: #555;
-  text-rendering: optimizeLegibility;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.45;
@@ -140,6 +139,24 @@ body {
   position: relative;
   overflow: hidden;
 }
+.header__logo {
+  height: 10rem;
+  filter: opacity(0.8);
+  transition: filter 0.25s;
+}
+@media (max-width: 62em) {
+  .header__logo {
+    height: 9rem;
+  }
+}
+@media (max-width: 48em) {
+  .header__logo {
+    height: 8rem;
+  }
+}
+.header__logo:hover {
+  filter: opacity(1);
+}
 .header__btns {
   font-size: 2rem;
 }
@@ -159,25 +176,6 @@ body {
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
-}
-
-.header__logo {
-  height: 10rem;
-  filter: opacity(0.8);
-  transition: filter 0.25s;
-}
-@media (max-width: 62em) {
-  .header__logo {
-    height: 9rem;
-  }
-}
-@media (max-width: 48em) {
-  .header__logo {
-    height: 8rem;
-  }
-}
-.header__logo:hover {
-  filter: opacity(1);
 }
 
 .main-nav {

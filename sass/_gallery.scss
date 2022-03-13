@@ -1,4 +1,4 @@
-@use "vars" as *;
+@use 'vars' as *;
 .section-gallery {
   display: grid;
   // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

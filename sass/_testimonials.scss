@@ -1,7 +1,7 @@
-@use "vars" as *;
+@use 'vars' as *;
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/back-customers-min.jpg");
+    url('../img/back-customers-min.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -34,7 +34,7 @@
     }
 
     &::before {
-      content: "\201D";
+      content: '\201D';
       font-size: 8rem;
       display: block;
       position: absolute;

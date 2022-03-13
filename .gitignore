@@ -1,2 +1,4 @@
-.gitignore
+
 css/style.css.map
+node_modules
+.gitignore
