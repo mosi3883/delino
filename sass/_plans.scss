@@ -18,6 +18,13 @@
 }
 
 .plan {
+  // padding: 3rem 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem var(--color-black-alhpa-xs);
+
   &:first-child {
     animation-name: pulse;
     animation-duration: 1s;
@@ -25,14 +32,6 @@
     animation-iteration-count: 5;
     animation-play-state: paused;
   }
-
-  // padding: 3rem 1rem;
-  background-color: #fff;
-  border-radius: 5px;
-
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0.5rem 1rem var(--color-black-alhpa-xs);
 
   & > div {
     padding: 1.5rem;
