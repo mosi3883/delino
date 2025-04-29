@@ -68,7 +68,8 @@ section {
 ---------------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn {
   display: inline-block;
   padding: 1rem 3rem;
   border-radius: 10rem;
@@ -76,17 +77,20 @@ section {
   cursor: pointer;
   transition: all 0.2s;
   text-align: center;
+  font-family: inherit;
 }
 
 .btn--primary:link,
-.btn--primary:visited {
+.btn--primary:visited,
+.btn--primary {
   color: var(--color-white);
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
 .btn--secondary:link,
-.btn--secondary:visited {
+.btn--secondary:visited,
+.btn--secondary {
   background-color: transparent;
   border: 1px solid var(--color-primary);
   color: var(--color-primary);

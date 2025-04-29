@@ -5,7 +5,7 @@
 history.scrollRestoration = 'manual';
 
 window.addEventListener('beforeunload', function () {
-  window.scrollTop(0);
+  document.scrollTop(0);
 });
 
 const ham = document.querySelector('.hamberger');
@@ -42,7 +42,6 @@ const scrollTo = function (e) {
 const sectonObs = new IntersectionObserver(
   function (entries, observer) {
     const [entry] = entries;
-    console.log(entry);
     if (!entry.isIntersecting) return;
     entry.target.classList.remove('section--hidden');
     observer.unobserve(entry.target);
@@ -100,9 +99,7 @@ allSec.forEach((sec) => {
 
 pulseObserve = new IntersectionObserver(
   function (entries) {
-    console.log;
-    if (entries[0].target.isIntersecting)
-      document.querySelector('.plan:first-child').classList.add('play');
+    if (entries[0].target.isIntersecting) document.querySelector('.plan:first-child').classList.add('play');
   },
   {
     root: null,
